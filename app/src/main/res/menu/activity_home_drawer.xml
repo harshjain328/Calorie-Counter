@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_diary"
+        android:icon="@drawable/diary"
+        android:title="Diary" />
+    <item
+        android:id="@+id/nav_prog"
+        android:icon="@drawable/progress"
+        android:title="Progress" />
+    <item
+        android:id="@+id/nav_goal"
+        android:icon="@drawable/goal"
+        android:title="Goals" />
+    <item
+        android:id="@+id/nav_nut"
+        android:icon="@drawable/calorie"
+        android:title="Nutrition" />
+    <item
+        android:id="@+id/nav_bmi"
+        android:icon="@drawable/bmi"
+        android:title="BMI" />
+    <item
+        android:id="@+id/nav_bar"
+        android:icon="@drawable/barcode"
+        android:title="Barcode" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+
+</menu>

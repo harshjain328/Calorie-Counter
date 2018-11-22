@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegPersonalActivity">
+
+    <ImageView
+        android:id="@+id/img_app"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app" />
+
+    <ImageView
+        android:id="@+id/img_prog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circle"
+        android:layout_below="@+id/img_app"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_prog"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Name"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#e1e1e1"
+        android:textColorHint="@color/tempColor" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#e1e1e1"
+        android:textColorHint="@color/tempColor" />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edEmail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#e1e1e1"
+        android:textColorHint="@color/tempColor" />
+
+    <EditText
+        android:id="@+id/edDOB"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edPass"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/editext"
+        android:editable="false"
+        android:focusable="false"
+        android:fontFamily="monospace"
+        android:hint="Date of birth"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#e1e1e1"
+        android:textColorHint="@color/tempColor" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/button"
+        android:fontFamily="monospace"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNext"
+        android:layout_alignBottom="@+id/btnNext"
+        android:layout_marginEnd="17dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toStartOf="@+id/btnNext"
+        android:background="@drawable/button"
+        android:fontFamily="monospace"
+        android:text="&lt;"
+        android:textColor="#e1e1e1"
+        android:textSize="20sp" />
+
+</RelativeLayout>

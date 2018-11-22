@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegActivity">
+
+    <ImageView
+        android:id="@+id/img_app"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app" />
+
+    <ImageView
+        android:id="@+id/img_prog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_app"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/circle5" />
+
+    <TextView
+        android:id="@+id/txt_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_prog"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="monospace"
+        android:text="How active are you?"
+        android:textColor="#e1e1e1"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgrpGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_active"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rbtnNot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/tempColor"
+            android:fontFamily="monospace"
+            android:text="@string/not_very_active"
+            android:textColor="@color/tempColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtNot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/tempColor"
+            android:text="(Little or no exercise, Desk job)" />
+
+        <RadioButton
+            android:id="@+id/rbtnLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/tempColor"
+            android:checked="true"
+            android:fontFamily="monospace"
+            android:text="Lightly Active"
+            android:textColor="@color/tempColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textColor="@color/tempColor"
+            android:text="(Exercise/Sports 1-3 days/week)" />
+
+        <RadioButton
+            android:id="@+id/rbtnActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/tempColor"
+            android:fontFamily="monospace"
+            android:text="Active"
+            android:textColor="@color/tempColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textColor="@color/tempColor"
+            android:text="(Exercise/Sports 6-7 days/week)" />
+
+        <RadioButton
+            android:id="@+id/rbtnVery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/tempColor"
+            android:fontFamily="monospace"
+            android:text="Very Active"
+            android:textColor="@color/tempColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtVery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/tempColor"
+            android:text="(Exercise every day, 2xs/day)" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/button"
+        android:fontFamily="monospace"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNext"
+        android:layout_alignBottom="@+id/btnNext"
+        android:layout_marginEnd="17dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toStartOf="@+id/btnNext"
+        android:background="@drawable/button"
+        android:fontFamily="monospace"
+        android:text="&lt;"
+        android:textColor="#e1e1e1"
+        android:textSize="20sp" />
+
+</RelativeLayout>

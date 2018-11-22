@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Calorie Counter</string>
+    <string name="btn_register">Register</string>
+    <string name="lose">Lose weight</string>
+    <string name="maintain">Maintain Weight</string>
+    <string name="gain">Gain Weight</string>
+    <string name="not_very_active">Not Very Active</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_goal">Goals</string>
+    <string name="title_activity_progress">ProgressActivity</string>
+    <string name="title_activity_barcode">BarcodeActivity</string>
+    <string name="title_activity_nutrition">Progress</string>
+    <string name="title_activity_bmi">BMI</string>
+    <string name="bmi_weight">Weight in KG:</string>
+    <string name="bmi_height">Height in CM:</string>
+    <string name="bmi_calc_button">Calculate BMI</string>
+</resources>
